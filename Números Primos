@@ -1,0 +1,14 @@
+numero=int(input('Digite um número: '))
+total=0
+for x in range(1,numero+1):
+    if(numero % x ==0):
+        print('\033[34m', end = ' ')
+        total+=1
+    else:
+        print('\033[m', end =' ')
+    print(f'{x}', end = ' ')
+print("\n","\033[m"f'O número {numero} é divisível {total} vezes')
+if(total==2):
+    print(f'O número {numero} é PRIMO')
+else:
+    print(f'O número {numero} não é PRIMO')
